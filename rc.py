@@ -31,4 +31,4 @@ def rc(q="'*@@schneider_d12chas'", pe = "'mpi-24'", nprocs = 24):
     file1.writelines(alllines)
     file1.close()
 
-    return alllines
+    return
