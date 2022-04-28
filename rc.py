@@ -25,8 +25,8 @@ def rc(q="'*@@schneider_d12chas'", pe = "'mpi-24'", nprocs = 24):
             line[-1] = str(nprocs)+"'\n"
             alllines[i] = ' '.join(line)
 
-    #file = os.getenv('VASP_SCRIPT')
-    file = '/afs/crc.nd.edu/user/j/jcrum/System/run_vasp_2.py'
+    file = os.getenv('VASP_SCRIPT')
+    #file = '/afs/crc.nd.edu/user/j/jcrum/System/run_vasp_2.py'
     file1 = open(file, "w")
     file1.writelines(alllines)
     file1.close()
